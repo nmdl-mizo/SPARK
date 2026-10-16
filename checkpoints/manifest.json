@@ -1,0 +1,153 @@
+{
+  "version": "1.0.0",
+  "checkpoint_selection": "last.pt",
+  "epoch": 50,
+  "active_learning_round": 5,
+  "training_mode": "from_scratch_on_cumulative_labels",
+  "num_members": 8,
+  "members": [
+    {
+      "init_seed": 27,
+      "file": "seed_27.pt",
+      "epoch": 50,
+      "sha256": "ffaef901199f1afea3218b882eefdb73ae14d94ed8897624f144624d40cb3688",
+      "source_checkpoint_sha256": "d10d9d94488e1fc0a044b56e1a145c76009d555db36727a965009cd08680738f",
+      "source_run": "csiro_active_max_uncertainty_r005_final_init_seed_27",
+      "bytes": 12077119
+    },
+    {
+      "init_seed": 42,
+      "file": "seed_42.pt",
+      "epoch": 50,
+      "sha256": "3ee6b8d80669f8f3218a04613e2c051a4445e09afd2aea6eb50ac2f158e811ee",
+      "source_checkpoint_sha256": "a53c414182da1e1bb0ddb1048604f026ec0d3081efc1f1675dd3fa72c4190727",
+      "source_run": "csiro_active_max_uncertainty_r005_final_init_seed_42",
+      "bytes": 12077119
+    },
+    {
+      "init_seed": 123,
+      "file": "seed_123.pt",
+      "epoch": 50,
+      "sha256": "5d1465b4c430f8394ec437804ec2f1b74d69a49a90bb0b0a17ecfe51b03d539a",
+      "source_checkpoint_sha256": "8ce09b24fdea3efbe08c9b858d65130d2db1f2143c14f0b7ef299ad819a179f8",
+      "source_run": "csiro_active_max_uncertainty_r005_final_init_seed_123",
+      "bytes": 12077829
+    },
+    {
+      "init_seed": 777,
+      "file": "seed_777.pt",
+      "epoch": 50,
+      "sha256": "7dd1355249dfe7cb794000ef689369650810bf4ba21082b119a588813ee9fc00",
+      "source_checkpoint_sha256": "2b1b9aea531f7b1931336b703fb9ea1f62fb8dbc9005caeff84bb8b98122182b",
+      "source_run": "csiro_active_max_uncertainty_r005_final_init_seed_777",
+      "bytes": 12077829
+    },
+    {
+      "init_seed": 1227,
+      "file": "seed_1227.pt",
+      "epoch": 50,
+      "sha256": "4fcbad1dafce536dcca1efdcdbaf265f8c2da4f87619be794d89ae38c9f90925",
+      "source_checkpoint_sha256": "91e6ce61e1f0ccfa4e74b4da1dafd18d8e55ea7e89c1e1b23b8f13372e65f6c7",
+      "source_run": "csiro_active_max_uncertainty_r005_final_init_seed_1227",
+      "bytes": 12078027
+    },
+    {
+      "init_seed": 1995,
+      "file": "seed_1995.pt",
+      "epoch": 50,
+      "sha256": "ce28c1ac65dcb3b144e9e0399b212203d0dd015b7d825df0567b053999be3d40",
+      "source_checkpoint_sha256": "86a84ca09b662df4f84bfb7dae765c4742d4d1c68ee6dc908e21b6d5e1a6a312",
+      "source_run": "csiro_active_max_uncertainty_r005_final_init_seed_1995",
+      "bytes": 12078027
+    },
+    {
+      "init_seed": 2024,
+      "file": "seed_2024.pt",
+      "epoch": 50,
+      "sha256": "3f2b42e78d48bb1b961aa8e7e4be2ecdde1b1158b99ed5c44c05546f33c123ee",
+      "source_checkpoint_sha256": "2c325cb09f155ef96cc6d77ca453b8f4470ac52d0fad9d4dc6263ecec8bcfcc0",
+      "source_run": "csiro_active_max_uncertainty_r005_final_init_seed_2024",
+      "bytes": 12078027
+    },
+    {
+      "init_seed": 2025,
+      "file": "seed_2025.pt",
+      "epoch": 50,
+      "sha256": "d7e6145b75b79a577da80124cabb23ef82fcc94673ffd539feb4524e7728a79e",
+      "source_checkpoint_sha256": "d9db5c5d35d373b4c4ad3c791a58c1a37b6668278fe65b7a5833a71644a3c90e",
+      "source_run": "csiro_active_max_uncertainty_r005_final_init_seed_2025",
+      "bytes": 12078027
+    }
+  ],
+  "model_config": {
+    "hidden_channels": 64,
+    "n_samples": 512,
+    "num_blocks": 4,
+    "int_emb_size": 32,
+    "basis_emb_size": 16,
+    "out_emb_channels": 256,
+    "num_spherical": 10,
+    "num_radial": 12,
+    "cutoff": 5.0,
+    "max_num_neighbors": 48,
+    "envelope_exponent": 5,
+    "num_before_skip": 1,
+    "num_after_skip": 2,
+    "num_output_layers": 3,
+    "dropout": 0.1,
+    "area_scale": 50.0
+  },
+  "graph": {
+    "cutoff": 5.0,
+    "max_num_neighbors": 48,
+    "triplet_threshold": 0.0001
+  },
+  "reconstruction": {
+    "energy_points": 512,
+    "trim_tail_ev": 1.0,
+    "adaptive_broadening": true,
+    "sigma_scale": 1.0,
+    "sigma_min_ev": 0.3,
+    "sigma_max_ev": 1.0,
+    "std_correction": 0,
+    "grid": "union_of_member_samples_per_atom"
+  },
+  "splits": {
+    "train": {
+      "structures": 5723,
+      "sha256": "78be71981486f30bb938180bfcb51f2c29025f389bc373093f818631c1482415"
+    },
+    "val": {
+      "structures": 593,
+      "sha256": "e202be82fe31e4262d0d42200622301071c21fd7f73104ae6342a316fc8372e3"
+    },
+    "test": {
+      "structures": 593,
+      "sha256": "baf41f180bb6030d67a502c822b3fc907c5f2df4ebdda2b216f2c21b77da9bad"
+    }
+  },
+  "training": {
+    "seed": 42,
+    "epochs": 50,
+    "batch_size": 4,
+    "lr": 0.0001,
+    "weight_decay": 1e-06,
+    "decay_mode": "cosine",
+    "final_lr_factor": 0.01,
+    "warmup_mode": "cosine",
+    "warmup_ratio": 0.1,
+    "warmup_start_factor": 0.1,
+    "samples_loss_type": "mse",
+    "area_weight": 1.0,
+    "init_checkpoint": null
+  },
+  "consistency_check": {
+    "passed": true,
+    "only_training_difference": "init_seed",
+    "same_model_config": true,
+    "same_dataset_config": true,
+    "same_splits": true,
+    "same_training_args": true,
+    "exported_tensors_equal_source": true
+  }
+}

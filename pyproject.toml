@@ -1,0 +1,50 @@
+[build-system]
+requires = ["hatchling>=1.26,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "spark-xanes"
+version = "1.0.0"
+description = "Atom-resolved Pt/Co XANES prediction and eight-model ensemble uncertainty"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+license = "MIT"
+authors = [{name = "SPARK contributors"}]
+dependencies = [
+    "torch==2.8.0",
+    "torch-geometric==2.7.0",
+    "torch-scatter==2.1.2",
+    "torch-sparse==0.6.18",
+    "torch-cluster==1.6.3",
+    "numpy==2.4.4",
+    "scipy==1.17.1",
+    "sympy==1.14.0",
+    "pymatgen==2026.3.23",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+spark = "spark.cli:main"
+
+[project.urls]
+Repository = "https://github.com/nmdl-mizo/SPARK"
+Issues = "https://github.com/nmdl-mizo/SPARK/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["spark"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"checkpoints" = "spark/checkpoints"
+"example/structure/104795.xyz" = "spark/example/structure/104795.xyz"
+"example/xanes/104795_feff_reference.dat" = "spark/example/xanes/104795_feff_reference.dat"
+"example/README.md" = "spark/example/README.md"
+"example/source.xml" = "spark/example/source.xml"
+
+[tool.hatch.build.targets.sdist]
+include = ["spark/", "checkpoints/", "example/", "tests/", "docs/", "README.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "install.sh", "pyproject.toml", "CITATION.cff"]
+exclude = ["example/xanes/*_prediction.dat", "example/xanes/*_std.dat", "example/xanes/*_mean.dat", "example/xanes/*_uncertainty.csv", "example/xanes/*_samples.npz", "example/xanes/*_prediction.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

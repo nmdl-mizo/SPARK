@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dcterms:dc xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dcterms.xsd">
+  <dc:title>PtCo Nanoparticle Data Set</dc:title>
+  <dc:creator>Jonathan Ting</dc:creator>
+  <dc:subject>Theory and design of materials</dc:subject>
+  <dc:subject>Condensed matter physics not elsewhere classified</dc:subject>
+  <dc:subject>Applications in physical sciences</dc:subject>
+  <dc:subject>Artificial intelligence not elsewhere classified</dc:subject>
+  <dc:subject>Nanotechnology not elsewhere classified</dc:subject>
+  <dc:subject>Theoretical and computational chemistry not elsewhere classified</dc:subject>
+  <dc:subject>Inorganic materials (incl. nanomaterials)</dc:subject>
+  <dc:subject>Data mining and knowledge discovery</dc:subject>
+  <dc:description>This is a set of 149637 platinum-cobalt (PtCo) nanoparticle FINAL CONFIGURATIONS, for use in data-driven studies. These structures have been optimised (fully relaxed) using molecular dynamics with an embedded atom (EAM) interatomic potential, at various temperatures.
+All files are in XYZ format, and the naming convention is defined in the accompanying CSV file that lists all of the structural features and property indicators (see Supporting Attachments).
+Sizes range from 105 atoms to 4802 atoms, with both crystalline and non-crystalline configurations and regions. Each nanoparticle has been characterised using a variety of topological features, including size, lattice structure, surface curvature, and several order parameters. The final 2 columns are target labels, providing the total energy and the excess formation energy. Links to publications describing these property labels are provided in the meta data. Other features can also be used as labels as desired.
+Note that the elemental order in the dataset title correspond to structurally distinct sets as documented in the methodology file.</dc:description>
+  <dc:publisher>CSIRO</dc:publisher>
+  <dc:contributor>Amanda Barnard</dc:contributor>
+  <dc:contributor>George Opletal</dc:contributor>
+  <dc:type />
+  <dc:format />
+  <dc:identifier>https://doi.org/10.25919/cg83-jv56</dc:identifier>
+  <dc:language />
+  <dc:rights />
+</dcterms:dc>

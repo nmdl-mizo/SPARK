@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite this software release and the source data when using SPARK."
+title: "SPARK: Spectral Prediction from Atomistic Representations frameworK"
+type: software
+authors:
+  - name: "SPARK contributors"
+version: 1.0.0
+date-released: 2026-10-15
+repository-code: "https://github.com/nmdl-mizo/SPARK"
+license: MIT
